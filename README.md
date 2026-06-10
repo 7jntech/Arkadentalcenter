@@ -1,8 +1,19 @@
-# arkadentalcenter
-index.html: The main HTML document containing the layout, text content, and structure of the website.
+# Arkadentalcenter
 
-dental-chair-image.jpg: Primary image asset used for the website's design.
+Professional dental care services website.
 
-small-chair-image.jpg: Secondary image asset used on the page.
+## Our Clinic
 
-README.md: Project documentation and instructions.
+![Dental Chair](dental-chair-image.jpg)
+
+![Small Chair](small-chair-image.jpg)
+
+## Contact
+
+For appointments, visit our website or reach out directly.
+
+"update readme" in the commit box, click Commit changes
+
+
+![Dental Chair](https://raw.githubusercontent.com/7jntech/Arkadentalcenter/main/dental-chair-image.jpg)
+![Small Chair](https://raw.githubusercontent.com/7jntech/Arkadentalcenter/main/small-chair-image.jpg)
