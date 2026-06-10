@@ -12,12 +12,8 @@ This repository contains the source code for our website.
 
 ## Files
 
-| File | Description |
-|------|-------------|
-| `index.html` | Main website page |
-| `dental-chair-image.jpg` | Clinic image |
-| `small-chair-image.jpg` | Additional clinic image |
+## Gallery
 
-## Contact
+![Dental Chair](https://raw.githubusercontent.com/7jntech/Arkadentalcenter/main/dental-chair-image.jpg)
 
-For appointments and inquiries, please visit our website or contact us directly.
+![Small Chair](https://raw.githubusercontent.com/7jntech/Arkadentalcenter/main/small-chair-image.jpg)
