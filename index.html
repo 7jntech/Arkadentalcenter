@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Arka Dental Center | Trusted Prosthodontist in Pasig, Philippines</title>
+    <meta name="description" content="Arka Dental Center - Premium dental care in Pasig, Philippines. Trusted prosthodontist offering composite restoration, smile makeovers, crowns, bridges & veneers. Affordable, no hidden prices. Book now!">
+    <meta name="keywords" content="Arka Dental Center, Pasig Dentist, Prosthodontist, Composite Restoration, Smile Makeover, Restorative Dentistry, Dental Clinic Philippines, Affordable Dentist Pasig, Dental Crowns, Dental Bridges, Dental Veneers">
+    <meta name="author" content="Arka Dental Center">
+    <meta property="og:title" content="Arka Dental Center | Trusted Dental Care in Pasig">
+    <meta property="og:description" content="Premium dental care with trusted prosthodontist. Composite restoration, smile makeovers, crowns & bridges. No hidden prices. Book your appointment today!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arkadentalcenter.com">
+    <meta property="og:image" content="https://arkadentalcenter.com/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#7A9E7E">
+    <link rel="canonical" href="https://arkadentalcenter.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --sage: #7A9E7E;
+            --sage-light: #A3C1A8;
+            --sage-dark: #5A7D5E;
+            --sage-pale: #E8F0E9;
+            --sage-hover: #6B8F6F;
+            --white: #FFFFFF;
+            --cream: #FAFAF8;
+            --golden-brown: #C4A35A;
+            --golden-brown-light: #D4B87A;
+            --golden-brown-dark: #A6853A;
+            --brown: #6B4E3D;
+            --brown-light: #8B7355;
+            --brown-dark: #4A3728;
+            --text-dark: #2C2C2C;
+            --text-muted: #6B6B6B;
+            --text-light: #999999;
+            --border: #E5E5E5;
+            --border-light: #F0F0F0;
+            --shadow: rgba(0,0,0,0.06);
+            --shadow-md: rgba(0,0,0,0.08);
+            --shadow-lg: rgba(0,0,0,0.12);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--text-dark);
+            background: var(--white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4, h5 { font-family: 'Playfair Display', serif; font-weight: 600; color: var(--brown-dark); }
+
+        /* ===== NAVIGATION ===== */
+        .nav-bar {
+            position: fixed; top: 0; left: 0; width: 100%;
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+        .nav-bar.scrolled { box-shadow: 0 2px 20px var(--shadow); }
+        .nav-container {
+            max-width: 1200px; margin: 0 auto;
+            padding: 14px 20px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-circle {
+            width: 44px; height: 44px; background: var(--sage); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-family: 'Playfair Display', serif; font-size: 18px;
+            font-style: italic; border: 2px solid var(--golden-brown);
+            flex-shrink: 0;
+        }
+        .logo-text { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--brown-dark); font-weight: 600; line-height: 1.2; }
+        .logo-text span { display: block; font-size: 10px; font-family: 'Lato', sans-serif; color: var(--sage-dark); letter-spacing: 2.5px; text-transform: uppercase; font-weight: 400; }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-dark); font-size: 14px; font-weight: 500; letter-spacing: 0.3px; position: relative; transition: color 0.3s; }
+        .nav-links a::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 0; height: 2px; background: var(--golden-brown); transition: width 0.3s; border-radius: 1px; }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+        .nav-links a:hover { color: var(--sage-dark); }
+        .nav-cta {
+            background: var(--sage); color: white !important; padding: 10px 24px; border-radius: 30px;
+            font-weight: 600 !important; border: 2px solid var(--sage-dark); transition: all 0.3s !important;
+            font-size: 13px !important; letter-spacing: 0.5px;
+        }
+        .nav-cta::after { display: none !important; }
+        .nav-cta:hover { background: var(--sage-dark) !important; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(122,158,126,0.3); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 22px; color: var(--brown-dark); cursor: pointer; padding: 8px; }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 100vh; display: flex; align-items: center; justify-content: center;
+            background: linear-gradient(135deg, var(--sage-pale) 0%, var(--white) 50%, var(--cream) 100%);
+            position: relative; overflow: hidden; padding: 120px 20px 80px;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -30%; right: -15%; width: 70%; height: 120%;
+            background: radial-gradient(ellipse, rgba(122,158,126,0.06) 0%, transparent 70%); pointer-events: none;
+        }
+        .hero-content { max-width: 1200px; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .hero-text h1 { font-size: 48px; line-height: 1.15; margin-bottom: 20px; color: var(--brown-dark); }
+        .hero-text h1 em { color: var(--sage-dark); font-style: italic; }
+        .hero-subtitle { font-size: 17px; color: var(--text-muted); line-height: 1.7; margin-bottom: 32px; max-width: 480px; }
+        .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px; }
+        .badge {
+            background: white; border: 1.5px solid var(--sage-pale); padding: 8px 16px; border-radius: 20px;
+            font-size: 12px; color: var(--sage-dark); font-weight: 500; display: flex; align-items: center; gap: 6px;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+        .badge i { color: var(--golden-brown); font-size: 11px; }
+        .hero-cta-group { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn-primary {
+            background: var(--sage); color: white; padding: 16px 32px; border-radius: 30px;
+            text-decoration: none; font-weight: 700; font-size: 14px; border: 2px solid var(--sage-dark);
+            display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s;
+            box-shadow: 0 4px 16px rgba(122,158,126,0.25); letter-spacing: 0.3px;
+        }
+        .btn-primary:hover { background: var(--sage-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(122,158,126,0.35); }
+        .btn-secondary {
+            background: transparent; color: var(--brown-dark); padding: 16px 32px; border-radius: 30px;
+            text-decoration: none; font-weight: 700; font-size: 14px; border: 2px solid var(--golden-brown);
+            display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s; letter-spacing: 0.3px;
+        }
+        .btn-secondary:hover { background: var(--golden-brown); color: white; transform: translateY(-2px); }
+        
+        /* ===== HERO SLIDER ===== */
+        .hero-visual { position: relative; display: flex; justify-content: center; }
+        .hero-image-frame {
+            width: 380px; height: 480px; border-radius: 200px 200px 20px 20px;
+            background: linear-gradient(180deg, var(--sage-light) 0%, var(--sage) 100%);
+            display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
+            border: 3px solid var(--golden-brown); box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        .hero-slide {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+            opacity: 0; transition: opacity 0.5s ease-in-out;
+        }
+        .hero-slide.active { opacity: 1; }
+        .hero-slider-nav {
+            position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); 
+            display: flex; gap: 8px; z-index: 10;
+        }
+        .hero-dot {
+            width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.5); 
+            border: 1px solid white; transition: 0.3s;
+        }
+        .hero-dot.active { background: white; }
+
+        /* ===== DID YOU KNOW SLIDER ===== */
+        .did-you-know { background: var(--white); padding: 60px 20px; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
+        .slider-container { max-width: 900px; margin: 0 auto; position: relative; }
+        .slider-header { text-align: center; margin-bottom: 36px; }
+        .slider-header h2 { font-size: 30px; color: var(--brown-dark); margin-bottom: 8px; }
+        .slider-header p { color: var(--text-muted); font-size: 15px; }
+        .slider-wrapper {
+            position: relative; overflow: hidden; border-radius: var(--radius-xl);
+            background: linear-gradient(135deg, var(--sage-pale) 0%, var(--cream) 100%);
+            border: 1px solid var(--sage-light); min-height: 300px;
+        }
+        .slider-track { display: flex; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        .slide { min-width: 100%; padding: 40px 32px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .slide-icon {
+            width: 64px; height: 64px; background: var(--sage); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
+            color: white; font-size: 24px; border: 2px solid var(--golden-brown);
+        }
+        .slide h3 { font-size: 22px; color: var(--brown-dark); margin-bottom: 14px; }
+        .slide p { font-size: 15px; color: var(--text-muted); line-height: 1.8; max-width: 560px; }
+        .slide-highlight {
+            background: white; padding: 3px 10px; border-radius: 6px; color: var(--sage-dark);
+            font-weight: 700; display: inline-block; margin: 3px 0; border: 1px solid var(--sage-light); font-size: 13px;
+        }
+        .slider-dots { display: flex; justify-content: center; gap: 10px; margin-top: 24px; }
+        .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--sage-pale); border: 2px solid var(--sage-light); cursor: pointer; transition: all 0.3s; }
+        .dot.active { background: var(--sage); transform: scale(1.2); border-color: var(--sage-dark); }
+        .slider-timer { width: 100%; height: 3px; background: var(--sage-pale); border-radius: 2px; margin-top: 16px; overflow: hidden; }
+        .timer-bar { height: 100%; background: var(--sage); border-radius: 2px; width: 0%; transition: width 0.1s linear; }
+
+        /* ===== WHY CHOOSE US ===== */
+        .why-us { padding: 80px 20px; background: var(--white); }
+        .section-container { max-width: 1200px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 48px; }
+        .section-header h2 { font-size: 32px; color: var(--brown-dark); margin-bottom: 12px; }
+        .section-header .line { width: 50px; height: 3px; background: var(--golden-brown); margin: 0 auto 14px; border-radius: 2px; }
+        .section-header p { color: var(--text-muted); font-size: 15px; max-width: 480px; margin: 0 auto; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .feature-card {
+            background: white; padding: 32px 24px; border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light); transition: all 0.3s; position: relative; overflow: hidden;
+        }
+        .feature-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--golden-brown); transform: scaleX(0); transition: transform 0.3s; }
+        .feature-card:hover::before { transform: scaleX(1); }
+        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px var(--shadow-md); border-color: var(--sage-pale); }
+        .feature-icon {
+            width: 50px; height: 50px; background: var(--sage-pale); border-radius: 12px;
+            display: flex; align-items: center; justify-content: center; margin-bottom: 16px;
+            color: var(--sage-dark); font-size: 20px; border: 1.5px solid var(--sage-light);
+        }
+        .feature-card h3 { font-size: 17px; color: var(--brown-dark); margin-bottom: 8px; }
+        .feature-card p { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
+
+        /* ===== SERVICES ===== */
+        .services { padding: 80px 20px; background: var(--cream); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .service-card {
+            background: var(--white); border-radius: var(--radius-lg); overflow: hidden;
+            border: 1px solid var(--border-light); transition: all 0.3s;
+        }
+        .service-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px var(--shadow-md); border-color: var(--sage-pale); }
+        .service-image {
+            height: 180px; background: linear-gradient(135deg, var(--sage-light) 0%, var(--sage) 100%);
+            display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
+        }
+        .service-image::after {
+            content: ''; position: absolute; width: 120px; height: 120px;
+            background: rgba(255,255,255,0.1); border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        }
+        .service-image i { font-size: 40px; color: rgba(255,255,255,0.9); z-index: 1; }
+        .service-content { padding: 24px; }
+        .service-content h3 { font-size: 18px; color: var(--brown-dark); margin-bottom: 8px; }
+        .service-content p { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px; }
+        .service-tag {
+            display: inline-block; background: var(--sage-pale); color: var(--sage-dark);
+            padding: 5px 12px; border-radius: 20px; font-size: 11px; font-weight: 600; border: 1px solid var(--sage-light);
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials { padding: 80px 20px; background: linear-gradient(180deg, var(--sage-pale) 0%, var(--white) 100%); }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .testimonial-card {
+            background: white; padding: 28px; border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light); position: relative;
+        }
+        .testimonial-card::before {
+            content: '"'; position: absolute; top: 12px; left: 20px;
+            font-family: 'Playfair Display', serif; font-size: 48px; color: var(--sage-pale); line-height: 1;
+        }
+        .testimonial-stars { color: var(--golden-brown); font-size: 13px; margin-bottom: 10px; letter-spacing: 1px; }
+        .testimonial-text { font-size: 14px; color: var(--text-dark); line-height: 1.8; margin-bottom: 18px; padding-top: 16px; font-style: italic; }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .author-avatar {
+            width: 40px; height: 40px; background: var(--sage); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 700; font-size: 14px; border: 2px solid var(--golden-brown); flex-shrink: 0;
+        }
+        .author-info h4 { font-size: 14px; color: var(--brown-dark); margin-bottom: 1px; }
+        .author-info p { font-size: 11px; color: var(--text-muted); }
+
+        /* ===== BOOKING CTA SECTION ===== */
+        .booking-cta { padding: 80px 20px; background: var(--white); text-align: center; position: relative; }
+        .booking-cta::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--sage), var(--golden-brown), var(--sage)); }
+        .booking-cta h2 { font-size: 36px; color: var(--brown-dark); margin-bottom: 16px; }
+        .booking-cta > p { color: var(--text-muted); font-size: 16px; max-width: 500px; margin: 0 auto 32px; line-height: 1.7; }
+        .booking-cta .btn-primary { font-size: 16px; padding: 18px 40px; }
+
+        /* ===== CONTACT INFO ===== */
+        .contact-section { padding: 60px 20px; background: var(--cream); }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
+        .contact-card {
+            background: white; padding: 28px; border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light); text-align: center; transition: all 0.3s;
+        }
+        .contact-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px var(--shadow); border-color: var(--sage-pale); }
+        .contact-card-icon {
+            width: 52px; height: 52px; background: var(--sage-pale); border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--sage-dark); font-size: 20px; margin: 0 auto 16px; border: 1.5px solid var(--sage-light);
+        }
+        .contact-card h4 { font-size: 16px; color: var(--brown-dark); margin-bottom: 6px; }
+        .contact-card p, .contact-card a { font-size: 14px; color: var(--text-muted); text-decoration: none; line-height: 1.6; }
+        .contact-card a:hover { color: var(--sage-dark); }
+        .social-links-inline { display: flex; justify-content: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+        .social-pill {
+            display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px;
+            border-radius: 30px; text-decoration: none; font-size: 12px; font-weight: 600;
+            transition: all 0.3s; border: 1.5px solid;
+        }
+        .social-pill.fb { background: #1877F2; color: white; border-color: #1877F2; }
+        .social-pill.fb:hover { background: #166fe5; transform: translateY(-2px); }
+        .social-pill.ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border-color: transparent; }
+        .social-pill.ig:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(220, 39, 67, 0.25); }
+        .social-pill.messenger { background: #0084FF; color: white; border-color: #0084FF; }
+        .social-pill.messenger:hover { background: #0073e6; transform: translateY(-2px); }
+
+        /* ===== LOCATION ===== */
+        .location { padding: 80px 20px; background: var(--white); }
+        .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .location-map {
+            background: white; border-radius: var(--radius-lg); overflow: hidden;
+            border: 1px solid var(--border-light); box-shadow: 0 8px 32px var(--shadow); height: 380px; position: relative;
+        }
+        .map-placeholder {
+            width: 100%; height: 100%; background: linear-gradient(135deg, var(--sage-pale) 0%, var(--cream) 100%);
+            display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--sage-dark);
+        }
+        .map-placeholder i { font-size: 40px; margin-bottom: 12px; color: var(--sage); }
+        .map-placeholder p { font-size: 15px; font-weight: 600; color: var(--brown-dark); }
+        .map-placeholder a { margin-top: 10px; color: var(--golden-brown-dark); font-size: 13px; text-decoration: underline; font-weight: 500; }
+        .location-info h2 { font-size: 28px; color: var(--brown-dark); margin-bottom: 16px; }
+        .location-info > p { color: var(--text-muted); line-height: 1.7; margin-bottom: 24px; font-size: 15px; }
+        .location-detail { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; }
+        .location-detail i { color: var(--sage); font-size: 16px; margin-top: 3px; flex-shrink: 0; width: 20px; text-align: center; }
+        .location-detail div h4 { font-size: 14px; color: var(--brown-dark); margin-bottom: 3px; }
+        .location-detail div p { font-size: 14px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+
+        /* ===== FOOTER ===== */
+        .footer { background: var(--brown-dark); color: white; padding: 60px 20px 24px; }
+        .footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+        .footer-brand .logo-circle { background: var(--sage); border-color: var(--golden-brown); margin-bottom: 14px; }
+        .footer-brand h3 { color: white; font-size: 18px; margin-bottom: 10px; }
+        .footer-brand p { color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.7; }
+        .footer-social { display: flex; gap: 10px; margin-top: 16px; }
+        .footer-social a {
+            width: 38px; height: 38px; background: rgba(255,255,255,0.08); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; color: white;
+            font-size: 14px; transition: all 0.3s; border: 1.5px solid rgba(255,255,255,0.15);
+        }
+        .footer-social a:hover { background: var(--sage); transform: translateY(-2px); border-color: var(--sage); }
+        .footer-col h4 { color: var(--golden-brown-light); font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px; font-weight: 700; }
+        .footer-col a { display: block; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 13px; margin-bottom: 10px; transition: color 0.3s; }
+        .footer-col a:hover { color: var(--golden-brown-light); }
+        .footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .footer-bottom p { color: rgba(255,255,255,0.4); font-size: 12px; }
+        .footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; font-size: 12px; transition: color 0.3s; }
+        .footer-bottom a:hover { color: var(--golden-brown-light); }
+
+        /* ===== FORM MODAL ===== */
+        .form-modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); z-index: 2000; align-items: center; justify-content: center;
+            backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+            padding: 20px; overflow-y: auto;
+        }
+        .form-modal-overlay.active { display: flex; }
+        .form-modal-content {
+            background: white; border-radius: var(--radius-xl); max-width: 600px; width: 100%;
+            max-height: 90vh; overflow-y: auto;
+            border: 1px solid var(--border-light); box-shadow: 0 24px 80px rgba(0,0,0,0.2);
+            animation: modalIn 0.35s ease; position: relative;
+        }
+        @keyframes modalIn { from { opacity: 0; transform: scale(0.95) translateY(20px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+        .form-modal-header {
+            background: linear-gradient(135deg, var(--sage) 0%, var(--sage-dark) 100%);
+            padding: 32px 32px 24px; text-align: center; position: relative;
+            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+        }
+        .form-modal-header::after {
+            content: ''; position: absolute; bottom: -20px; left: 0; right: 0;
+            height: 40px; background: white; border-radius: 50% 50% 0 0;
+        }
+        .form-modal-tooth {
+            width: 56px; height: 56px; background: white; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 12px; color: var(--sage-dark); font-size: 24px;
+            border: 3px solid var(--golden-brown); box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            position: relative; z-index: 1;
+        }
+        .form-modal-header h3 { color: white; font-size: 22px; margin-bottom: 4px; position: relative; z-index: 1; }
+        .form-modal-header p { color: rgba(255,255,255,0.85); font-size: 13px; position: relative; z-index: 1; }
+        .form-modal-close {
+            position: absolute; top: 16px; right: 16px; width: 36px; height: 36px;
+            background: rgba(255,255,255,0.2); border: none; border-radius: 50%;
+            color: white; font-size: 16px; cursor: pointer; display: flex;
+            align-items: center; justify-content: center; transition: all 0.3s; z-index: 2;
+        }
+        .form-modal-close:hover { background: rgba(255,255,255,0.35); }
+        .form-modal-body { padding: 20px 32px 32px; }
+
+        /* Form Tabs */
+        .form-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+        .form-tab {
+            flex: 1; padding: 12px; border: 2px solid var(--border-light); border-radius: var(--radius-md);
+            background: white; cursor: pointer; font-family: 'Lato', sans-serif; font-size: 13px;
+            font-weight: 600; color: var(--text-muted); transition: all 0.3s; text-align: center;
+        }
+        .form-tab.active { border-color: var(--sage); background: var(--sage-pale); color: var(--sage-dark); }
+        .form-tab:hover:not(.active) { border-color: var(--sage-light); }
+
+        /* Form Fields */
+        .form-group { margin-bottom: 18px; }
+        .form-group label {
+            display: flex; align-items: center; gap: 6px;
+            font-size: 12px; font-weight: 700; color: var(--brown-dark);
+            margin-bottom: 6px; letter-spacing: 0.3px; text-transform: uppercase;
+        }
+        .form-group label .required { color: #c0392b; font-size: 10px; font-weight: 700; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 14px 16px; border: 1.5px solid var(--border);
+            border-radius: var(--radius-md); font-family: 'Lato', sans-serif;
+            font-size: 14px; color: var(--text-dark); background: var(--white);
+            transition: all 0.3s; -webkit-appearance: none; appearance: none;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none; border-color: var(--sage); background: white;
+            box-shadow: 0 0 0 4px rgba(122,158,126,0.08);
+        }
+        .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-light); }
+        .form-group textarea { min-height: 90px; resize: vertical; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        .form-select-wrapper { position: relative; }
+        .form-select-wrapper::after {
+            content: '\f107'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
+            position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+            color: var(--text-muted); font-size: 12px; pointer-events: none;
+        }
+        .form-submit {
+            width: 100%; background: var(--sage); color: white; padding: 16px;
+            border: 2px solid var(--sage-dark); border-radius: var(--radius-md);
+            font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 700;
+            cursor: pointer; transition: all 0.3s; display: flex;
+            align-items: center; justify-content: center; gap: 10px; margin-top: 8px; letter-spacing: 0.3px;
+        }
+        .form-submit:hover { background: var(--sage-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(122,158,126,0.3); }
+        .form-submit:disabled { opacity: 0.7; cursor: not-allowed; transform: none; box-shadow: none; }
+        .form-submit:active { transform: translateY(0); }
+        .form-note { text-align: center; font-size: 11px; color: var(--text-light); margin-top: 14px; }
+        .form-note i { color: var(--sage); }
+
+        /* ===== CONFIRMATION MODAL ===== */
+        .confirm-modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); z-index: 2100; align-items: center; justify-content: center;
+            backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+        }
+        .confirm-modal-overlay.active { display: flex; }
+        .confirm-modal-content {
+            background: white; padding: 40px 32px; border-radius: var(--radius-xl);
+            max-width: 400px; width: 90%; text-align: center;
+            border: 2px solid var(--sage-pale); box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            animation: modalIn 0.35s ease;
+        }
+        .confirm-icon {
+            width: 64px; height: 64px; background: var(--sage-pale); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px; color: var(--sage-dark); font-size: 28px;
+            border: 3px solid var(--sage-light);
+        }
+        .confirm-modal-content h3 { font-size: 22px; color: var(--brown-dark); margin-bottom: 10px; }
+        .confirm-modal-content p { color: var(--text-muted); line-height: 1.7; margin-bottom: 6px; font-size: 14px; }
+        .ticket-number {
+            background: var(--sage-pale); padding: 10px 20px; border-radius: var(--radius-md);
+            display: inline-block; margin: 14px 0; border: 1.5px solid var(--sage-light);
+        }
+        .ticket-number strong { color: var(--sage-dark); font-size: 18px; letter-spacing: 2px; }
+        .confirm-actions { display: flex; gap: 10px; margin-top: 20px; justify-content: center; flex-wrap: wrap; }
+        .confirm-btn {
+            padding: 12px 24px; border-radius: 30px; font-weight: 600; font-size: 13px;
+            cursor: pointer; border: 2px solid; transition: all 0.3s; text-decoration: none;
+            display: inline-flex; align-items: center; gap: 8px;
+        }
+        .confirm-btn.primary { background: var(--sage); color: white; border-color: var(--sage-dark); }
+        .confirm-btn.primary:hover { background: var(--sage-dark); }
+        .confirm-btn.secondary { background: transparent; color: var(--brown-dark); border-color: var(--golden-brown); }
+        .confirm-btn.secondary:hover { background: var(--golden-brown); color: white; }
+
+        /* ===== PATIENT RECORDS ===== */
+        .records-toggle { position: fixed; bottom: 20px; left: 20px; z-index: 999; opacity: 0.12; transition: opacity 0.3s; }
+        .records-toggle:hover { opacity: 0.5; }
+        .records-btn {
+            width: 42px; height: 42px; background: var(--sage); border: 2px solid var(--sage-dark);
+            border-radius: 10px; display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 16px; cursor: pointer; transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .records-btn:hover { transform: scale(1.08); opacity: 1; }
+        .records-panel {
+            display: none; position: fixed; bottom: 76px; left: 20px; width: 300px;
+            background: white; border-radius: var(--radius-lg);
+            border: 1.5px solid var(--sage-pale); box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+            z-index: 998; overflow: hidden;
+        }
+        .records-panel.active { display: block; animation: slideUp 0.3s ease; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+        .records-header { background: var(--sage-pale); padding: 14px 18px; }
+        .records-header h4 { color: var(--sage-dark); font-size: 15px; margin-bottom: 3px; font-weight: 600; }
+        .records-header p { font-size: 11px; color: var(--text-muted); }
+        .records-body { padding: 18px; }
+        .records-body p { font-size: 12px; color: var(--text-muted); margin-bottom: 14px; line-height: 1.6; }
+        .records-input {
+            width: 100%; padding: 12px; border: 2px solid var(--sage-pale); border-radius: var(--radius-md);
+            font-size: 14px; margin-bottom: 10px; text-align: center; letter-spacing: 4px;
+            font-weight: 700; color: var(--text-muted); background: var(--cream); font-family: 'Lato', sans-serif;
+        }
+        .records-input:focus { outline: none; border-color: var(--sage-light); }
+        .records-submit {
+            width: 100%; padding: 12px; background: var(--sage-light); color: white;
+            border: none; border-radius: var(--radius-md); font-weight: 600; cursor: pointer;
+            transition: background 0.3s; font-family: 'Lato', sans-serif; font-size: 13px;
+        }
+        .records-submit:hover { background: var(--sage); }
+        .records-error { color: #c0392b; font-size: 11px; margin-top: 8px; display: none; }
+        .records-error.active { display: block; }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 992px) {
+            .hero-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+            .hero-text h1 { font-size: 38px; }
+            .hero-badges { justify-content: center; }
+            .hero-cta-group { justify-content: center; }
+            .hero-visual { order: -1; }
+            .hero-image-frame { width: 300px; height: 380px; margin: 0 auto; }
+            .location-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0;
+                background: white; flex-direction: column; padding: 20px; gap: 14px;
+                border-bottom: 1px solid var(--border-light); box-shadow: 0 8px 24px var(--shadow);
+            }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .hero-text h1 { font-size: 28px; }
+            .hero-subtitle { font-size: 15px; }
+            .section-header h2 { font-size: 24px; }
+            .features-grid, .services-grid, .testimonials-grid, .contact-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .booking-cta h2 { font-size: 26px; }
+            .form-modal-content { max-height: 85vh; }
+            .form-modal-body { padding: 16px 20px 24px; }
+            .form-modal-header { padding: 24px 20px 20px; }
+            .location-map { height: 300px; }
+        }
+        @media (max-width: 480px) {
+            .hero-text h1 { font-size: 24px; }
+            .hero-subtitle { font-size: 14px; }
+            .btn-primary, .btn-secondary { padding: 14px 24px; font-size: 13px; }
+            .badge { font-size: 11px; padding: 6px 12px; }
+            .hero-image-frame { width: 240px; height: 300px; }
+            .section-header h2 { font-size: 22px; }
+            .slide h3 { font-size: 18px; }
+            .slide p { font-size: 14px; }
+            .form-modal-content { border-radius: var(--radius-lg); }
+            .records-panel { width: calc(100vw - 40px); left: 20px; }
+            .confirm-modal-content { padding: 28px 20px; }
+            .location-info h2 { font-size: 22px; }
+        }
+        @media (max-width: 360px) {
+            .hero-text h1 { font-size: 22px; }
+            .nav-container { padding: 12px 16px; }
+            .logo-text { font-size: 16px; }
+            .logo-circle { width: 38px; height: 38px; font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-circle">Arka</div>
+                <div class="logo-text">Arka Dental<span>Center</span></div>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact">Contact</a>
+                <a href="#" class="nav-cta" onclick="openFormModal(); return false;">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Your Natural Looking Solution to a <em>Beautiful Smile!</em></h1>
+                <p class="hero-subtitle">Trusted prosthodontist in Pasig, Philippines. Premium porcelain, Emax & zirconia crowns, bridges & veneers with no hidden prices.</p>
+                <div class="hero-badges">
+                    <span class="badge"><i class="fas fa-certificate"></i> Trusted Doctor</span>
+                    <span class="badge"><i class="fas fa-tag"></i> Affordable</span>
+                    <span class="badge"><i class="fas fa-star"></i> Most Recommended</span>
+                    <span class="badge"><i class="fas fa-shield-alt"></i> Safe & Practical</span>
+                    <span class="badge"><i class="fas fa-gem"></i> Premium Quality</span>
+                </div>
+                <div class="hero-cta-group">
+                    <a href="#" class="btn-primary" onclick="openFormModal(); return false;"><i class="fas fa-calendar-check"></i> Ready to Book an Appointment?</a>
+                    <a href="https://m.me/arkadentalph" target="_blank" class="btn-secondary" rel="noopener noreferrer"><i class="fab fa-facebook-messenger"></i> Chat on Messenger</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-image-frame" onclick="nextHeroSlide()">
+                    <img src="small-chair-image.jpg" alt="Small Chair" class="hero-slide active" id="heroSlide1">
+                    <img src="dental-chair-image.jpg" alt="Dental Chair" class="hero-slide" id="heroSlide2">
+                    
+                    <div class="hero-slider-nav">
+                        <span class="hero-dot active" id="heroDot1"></span>
+                        <span class="hero-dot" id="heroDot2"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="did-you-know" id="about">
+        <div class="slider-container">
+            <div class="slider-header">
+                <h2>Did You Know?</h2>
+                <p>Simple advice for a healthier, brighter smile</p>
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="slide">
+                        <div class="slide-icon"><i class="fas fa-lemon"></i></div>
+                        <h3>Kiwi: A Powerhouse for Your Smile</h3>
+                        <p>
+                            <span class="slide-highlight">Gum Guard</span> — High Vitamin C builds collagen to keep gums firm.<br>
+                            <span class="slide-highlight">Natural Scrub</span> — Fiber acts like a mini-toothbrush for your enamel.<br>
+                            <span class="slide-highlight">Bacteria Fighter</span> — Helps your mouth's natural defense system.<br>
+                            <span class="slide-highlight">Stain Fighter</span> — Enzymes help break down surface stains.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-icon"><i class="fas fa-tooth"></i></div>
+                        <h3>Brush for 2 Minutes, Twice a Day</h3>
+                        <p>Most people only brush for 45 seconds. The recommended <span class="slide-highlight">2 minutes</span> removes up to <span class="slide-highlight">30% more plaque</span>. Use a soft-bristled brush and replace it every 3 months for optimal cleaning power.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-icon"><i class="fas fa-teeth"></i></div>
+                        <h3>Flossing Cleans 40% of Your Tooth Surface</h3>
+                        <p>Your toothbrush cannot reach between teeth. Daily flossing prevents <span class="slide-highlight">cavities, gum disease, and bad breath</span> by removing plaque from areas your brush misses entirely.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-icon"><i class="fas fa-glass-water"></i></div>
+                        <h3>Water Is Your Mouth's Best Friend</h3>
+                        <p>Drinking water after meals helps <span class="slide-highlight">wash away food particles and acids</span> that lead to decay. Fluoridated water also strengthens enamel and reduces cavity risk by up to 25%.</p>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-icon"><i class="fas fa-user-doctor"></i></div>
+                        <h3>See Your Dentist Every 6 Months</h3>
+                        <p>Regular checkups catch problems early when they are <span class="slide-highlight">easier and cheaper to treat</span>. Professional cleanings remove tartar that brushing cannot, keeping your gums healthy and your smile bright.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots" id="sliderDots"></div>
+            <div class="slider-timer"><div class="timer-bar" id="timerBar"></div></div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2>Why Patients Choose Arka</h2>
+                <div class="line"></div>
+                <p>Experience dental care that puts your comfort and confidence first</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-user-md"></i></div>
+                    <h3>Trusted Doctor</h3>
+                    <p>Licensed prosthodontist with years of specialized training in restorative and cosmetic dentistry you can trust.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                    <h3>Affordable & Transparent</h3>
+                    <p>No hidden prices. Clear, upfront pricing for every treatment. Quality dental care that fits your budget.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-thumbs-up"></i></div>
+                    <h3>Most Recommended</h3>
+                    <p>3.1K likes and followers on Facebook. Word-of-mouth referrals from satisfied patients across Pasig.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-snowflake"></i></div>
+                    <h3>Cool & Relaxing</h3>
+                    <p>A calming clinic atmosphere designed to ease dental anxiety. Sit back, relax, and let us care for your smile.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Premium Quality</h3>
+                    <p>Porcelain, Emax & Zirconia crowns, bridges, and veneers crafted for natural-looking, long-lasting results.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Safe & Practical</h3>
+                    <p>Strict sterilization protocols and practical treatment approaches that prioritize your health and safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2>Our Services</h2>
+                <div class="line"></div>
+                <p>Comprehensive restorative and cosmetic dental solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-image"><i class="fas fa-tooth"></i></div>
+                    <div class="service-content">
+                        <h3>Composite Restoration</h3>
+                        <p>We cleared out the decay and closed the gap with a single composite treatment. No more cavity, no more gap—just a clean, healthy, and confident smile.</p>
+                        <span class="service-tag">#CompositeRestoration</span>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image"><i class="fas fa-crown"></i></div>
+                    <div class="service-content">
+                        <h3>Porcelain & Zirconia Crowns</h3>
+                        <p>Natural-looking, durable crowns that restore damaged teeth while blending seamlessly with your smile. Premium materials for premium results.</p>
+                        <span class="service-tag">#RestorativeDentistry</span>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image"><i class="fas fa-bridge"></i></div>
+                    <div class="service-content">
+                        <h3>Dental Bridges</h3>
+                        <p>Bridge the gap with custom-fitted prosthetics that restore function and aesthetics. Eat, speak, and smile with complete confidence again.</p>
+                        <span class="service-tag">#RestorativeDentistry</span>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image"><i class="fas fa-magic"></i></div>
+                    <div class="service-content">
+                        <h3>Smile Makeover / Veneers</h3>
+                        <p>Transform your smile with custom veneers. Whether it is discoloration, chips, or gaps—get the smile you have always dreamed of.</p>
+                        <span class="service-tag">#SmileMakeover</span>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image"><i class="fas fa-teeth-open"></i></div>
+                    <div class="service-content">
+                        <h3>General Dentistry</h3>
+                        <p>From routine cleanings to fillings and extractions, we provide comprehensive care to keep your oral health in top condition.</p>
+                        <span class="service-tag">General Care</span>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image"><i class="fas fa-clipboard-check"></i></div>
+                    <div class="service-content">
+                        <h3>Consultation & Checkup</h3>
+                        <p>Regular dental exams and professional cleanings to catch issues early and maintain a healthy, beautiful smile for life.</p>
+                        <span class="service-tag">Preventive Care</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2>What Patients Say</h2>
+                <div class="line"></div>
+                <p>Real reviews from our valued patients</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">The doctor is so skilled and gentle. I got my composite restoration done and the gap is completely gone. The atmosphere is so relaxing—I actually enjoyed my dental visit!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info"><h4>Maria J.</h4><p>Composite Restoration Patient</p></div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">Finally a dentist with no hidden prices! Everything was explained clearly before treatment. The zirconia crown looks completely natural. Highly recommended!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RL</div>
+                        <div class="author-info"><h4>Robert L.</h4><p>Crown & Bridge Patient</p></div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">Great skilled dentist with a practical approach. The clinic is clean, safe, and the staff is very accommodating. My smile makeover exceeded all expectations!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div class="author-info"><h4>Sarah K.</h4><p>Smile Makeover Patient</p></div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">I am very thankful for this Dental Clinic. From consultation to procedure, I can feel their care and professionalism. The dentist is gentle, the service is good. Highly recommended!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AA</div>
+                        <div class="author-info"><h4>Anna Anna</h4><p>Verified Patient</p></div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">They are a good dentist, their staff is also very kind.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RB</div>
+                        <div class="author-info"><h4>Ryan Bolonia</h4><p>Verified Patient</p></div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">The location is convenient. The dentists are good.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info"><h4>Sali Rodil</h4><p>Verified Patient</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-cta" id="contact">
+        <h2>Ready for Your New Smile?</h2>
+        <p>Schedule your visit today and take the first step toward a healthier, more confident smile. We will confirm your appointment within 24 hours.</p>
+        <a href="#" class="btn-primary" onclick="openFormModal(); return false;"><i class="fas fa-calendar-check"></i> Ready to Book an Appointment?</a>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-card fade-in">
+                <div class="contact-card-icon"><i class="fas fa-location-dot"></i></div>
+                <h4>Clinic Address</h4>
+                <p>Unit L519 One Oasis Condominium Hub A, Ortigas Extension, Pasig City, Philippines, 1608</p>
+            </div>
+            <div class="contact-card fade-in">
+                <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                <h4>Email Us</h4>
+                <a href="mailto:arkadentalcenterph@gmail.com">arkadentalcenterph@gmail.com</a>
+            </div>
+            <div class="contact-card fade-in">
+                <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                <h4>Call or Text</h4>
+                <a href="tel:+639671956703">0967 195 6703</a>
+            </div>
+            <div class="contact-card fade-in">
+                <div class="contact-card-icon"><i class="fas fa-share-nodes"></i></div>
+                <h4>Follow & Message Us</h4>
+                <div class="social-links-inline">
+                    <a href="https://facebook.com/arkadentalph" target="_blank" class="social-pill fb" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="https://instagram.com/arkadentalph" target="_blank" class="social-pill ig" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://m.me/arkadentalph" target="_blank" class="social-pill messenger" rel="noopener noreferrer"><i class="fab fa-facebook-messenger"></i> Messenger</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="location-grid">
+            <div class="location-map">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-location-dot"></i>
+                    <p>One Oasis Condominium Hub A</p>
+                    <a href="https://maps.google.com/?q=One+Oasis+Condominium+Hub+A+Ortigas+Extension+Pasig" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+                </div>
+            </div>
+            <div class="location-info">
+                <h2>Visit Our Clinic</h2>
+                <p>Located in the heart of Pasig City, our clinic is easily accessible with a relaxing environment designed for your comfort.</p>
+                <div class="location-detail">
+                    <i class="fas fa-location-dot"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Unit L519 One Oasis Condominium Hub A, Ortigas Extension, Pasig City, Philippines, 1608</p>
+                    </div>
+                </div>
+                <div class="location-detail">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Clinic Hours</h4>
+                        <p>Monday - Saturday: 9:00 AM - 6:00 PM<br>Sunday: By Appointment</p>
+                    </div>
+                </div>
+                <div class="location-detail">
+                    <i class="fas fa-car"></i>
+                    <div>
+                        <h4>Parking</h4>
+                        <p>Available at One Oasis Condominium. Accessible via Ortigas Extension.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-circle">Arka</div>
+                <h3>Arka Dental Center</h3>
+                <p>Your natural looking solution to a beautiful smile. Trusted prosthodontist in Pasig, Philippines offering premium restorative and cosmetic dentistry.</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com/arkadentalph" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/arkadentalph" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://m.me/arkadentalph" target="_blank" rel="noopener noreferrer" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="#services">Composite Restoration</a>
+                <a href="#services">Crowns & Bridges</a>
+                <a href="#services">Veneers</a>
+                <a href="#services">General Dentistry</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#about">About Us</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#" onclick="openFormModal(); return false;">Book Now</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Patient Rights</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2026 Arka Dental Center. All rights reserved.</p>
+            <p>Unit L519 One Oasis Condominium Hub A, Pasig City, Philippines, 1608 · 0967 195 6703</p>
+        </div>
+    </footer>
+
+    <div class="form-modal-overlay" id="formModal">
+        <div class="form-modal-content">
+            <div class="form-modal-header">
+                <button class="form-modal-close" onclick="closeFormModal()" aria-label="Close"><i class="fas fa-times"></i></button>
+                <div class="form-modal-tooth"><i class="fas fa-tooth"></i></div>
+                <h3>Book Your Appointment</h3>
+                <p>Complete the form below and we will confirm within 24 hours</p>
+            </div>
+            <div class="form-modal-body">
+                <div class="form-tabs">
+                    <button class="form-tab active" id="tabNew" onclick="switchTab('new')" type="button">First Time Visitor</button>
+                    <button class="form-tab" id="tabReturning" onclick="switchTab('returning')" type="button">Returning Patient</button>
+                </div>
+
+                <form id="bookingForm" action="https://formspree.io/f/sampleemail@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Appointment Request - Arka Dental Center">
+                    <input type="hidden" name="patient_type" id="patientType" value="first-time">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name <span class="required">REQUIRED</span></label>
+                            <input type="text" id="firstName" name="first_name" required placeholder="Juan">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name <span class="required">REQUIRED</span></label>
+                            <input type="text" id="lastName" name="last_name" required placeholder="Dela Cruz">
+                        </div>
+                    </div>
+
+                    <div id="returningPatientFields" style="display: none;">
+                        <div class="form-group">
+                            <label for="lastVisit">Month & Year of Last Visit <span class="required">REQUIRED</span></label>
+                            <input type="month" id="lastVisit" name="last_visit">
+                        </div>
+                    </div>
+
+                    <div id="firstTimeFields">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dob">Date of Birth <span class="required">REQUIRED</span></label>
+                                <input type="date" id="dob" name="date_of_birth" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">REQUIRED</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(0967) 195-6703">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">REQUIRED</span></label>
+                            <input type="email" id="email" name="email" required placeholder="juan@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Home Address <span class="required">REQUIRED</span></label>
+                            <input type="text" id="address" name="address" required placeholder="123 Main St, City, State, ZIP">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="emergencyName">Emergency Contact Name <span class="required">REQUIRED</span></label>
+                                <input type="text" id="emergencyName" name="emergency_name" required placeholder="Jane Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="emergencyPhone">Emergency Contact Phone <span class="required">REQUIRED</span></label>
+                                <input type="tel" id="emergencyPhone" name="emergency_phone" required placeholder="(0967) 195-6703">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed <span class="required">REQUIRED</span></label>
+                            <div class="form-select-wrapper">
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="composite-restoration">Composite Restoration</option>
+                                    <option value="crowns">Porcelain / Emax / Zirconia Crowns</option>
+                                    <option value="bridges">Dental Bridges</option>
+                                    <option value="veneers">Veneers / Smile Makeover</option>
+                                    <option value="general">General Dentistry</option>
+                                    <option value="consultation">Consultation / Checkup</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Preferred Date <span class="required">REQUIRED</span></label>
+                            <input type="date" id="date" name="preferred_date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="medicalHistory">Medical History / Allergies</label>
+                            <textarea id="medicalHistory" name="medical_history" placeholder="Please list any medical conditions, allergies, or medications we should be aware of..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Additional Notes (Optional)</label>
+                            <textarea id="notes" name="notes" placeholder="Tell us about your concerns or preferred time..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-paper-plane"></i> Submit Appointment Request
+                    </button>
+                    <p class="form-note"><i class="fas fa-lock"></i> Your information is secure. We will never share your data.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="confirm-modal-overlay" id="confirmModal">
+        <div class="confirm-modal-content">
+            <div class="confirm-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Appointment Request Sent!</h3>
+            <p>Thank you for choosing Arka Dental Center. We have received your request and will confirm your appointment within 24 hours.</p>
+            <div class="ticket-number">
+                <p>Your Ticket Number</p>
+                <strong id="ticketNum">ARK-2026-XXXX</strong>
+            </div>
+            <p>A confirmation email has been sent to your inbox.</p>
+            <div class="confirm-actions">
+                <a href="https://m.me/arkadentalph" target="_blank" class="confirm-btn primary" rel="noopener noreferrer"><i class="fab fa-facebook-messenger"></i> Chat on Messenger</a>
+                <button class="confirm-btn secondary" onclick="closeConfirmModal()"><i class="fas fa-times"></i> Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="records-toggle">
+        <button class="records-btn" onclick="toggleRecords()" aria-label="Records" title="Patient Records">
+            <i class="fas fa-folder-medical"></i>
+        </button>
+    </div>
+    <div class="records-panel" id="recordsPanel">
+        <div class="records-header">
+            <h4><i class="fas fa-shield-halved" style="color: var(--sage-dark);"></i> Patient Records</h4>
+            <p>Secure access for authorized personnel only</p>
+        </div>
+        <div class="records-body">
+            
+            <div id="recordsAuth">
+                <p>Patient records are retained for up to 7 years in compliance with healthcare regulations. Enter your access key to proceed.</p>
+                <input type="password" class="records-input" id="recordsKey" placeholder="#######" maxlength="7" autocomplete="off">
+                <button class="records-submit" onclick="verifyRecords()">Access Records</button>
+                <p class="records-error" id="recordsError"><i class="fas fa-circle-exclamation"></i> Invalid access key. Please try again.</p>
+            </div>
+
+            <div id="recordsDashboard" style="display: none;">
+                <p style="margin-bottom: 8px; font-weight: 700; color: var(--sage-dark);">Online Booking Calendar</p>
+                <input type="date" class="records-input" style="letter-spacing: normal;" id="adminDate" onchange="showMockBookings()">
+                
+                <div id="adminBookings" style="margin-top: 10px; max-height: 160px; overflow-y: auto; text-align: left; font-size: 13px;">
+                    </div>
+                
+                <button class="records-submit" style="margin-top: 14px; background: var(--brown-dark);" onclick="logoutRecords()">
+                    <i class="fas fa-lock"></i> Lock Panel
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // ===== HERO SLIDER ======
+        let currentHeroSlide = 1;
+        function nextHeroSlide() {
+            document.getElementById('heroSlide' + currentHeroSlide).classList.remove('active');
+            document.getElementById('heroDot' + currentHeroSlide).classList.remove('active');
+            
+            currentHeroSlide = currentHeroSlide === 1 ? 2 : 1;
+            
+            document.getElementById('heroSlide' + currentHeroSlide).classList.add('active');
+            document.getElementById('heroDot' + currentHeroSlide).classList.add('active');
+        }
+
+        // ===== MOBILE MENU =====
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+
+        // ===== NAVBAR SCROLL =====
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+
+        // ===== ACTIVE NAV LINK =====
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) current = section.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+            });
+        });
+
+        // ===== DID YOU KNOW SLIDER =====
+        const sliderTrack = document.getElementById('sliderTrack');
+        const sliderDots = document.getElementById('sliderDots');
+        const timerBar = document.getElementById('timerBar');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        const slideDuration = 10000;
+        let slideInterval;
+        let timerInterval;
+        let timerStart;
+
+        slides.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'dot' + (i === 0 ? ' active' : '');
+            dot.addEventListener('click', () => goToSlide(i));
+            sliderDots.appendChild(dot);
+        });
+
+        function goToSlide(index) {
+            currentSlide = index;
+            sliderTrack.style.transform = 'translateX(-' + (index * 100) + '%)';
+            document.querySelectorAll('.dot').forEach((d, i) => {
+                d.classList.toggle('active', i === index);
+            });
+            resetTimer();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            goToSlide(currentSlide);
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            timerStart = Date.now();
+            timerBar.style.transition = 'none';
+            timerBar.style.width = '0%';
+            setTimeout(() => {
+                timerBar.style.transition = 'width ' + slideDuration + 'ms linear';
+                timerBar.style.width = '100%';
+            }, 50);
+            timerInterval = setInterval(() => {
+                const elapsed = Date.now() - timerStart;
+                if (elapsed >= slideDuration) {
+                    nextSlide();
+                }
+            }, 100);
+        }
+
+        function startSlider() {
+            resetTimer();
+            slideInterval = setTimeout(() => {
+                nextSlide();
+                startSlider();
+            }, slideDuration);
+        }
+
+        startSlider();
+
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        sliderWrapper.addEventListener('mouseenter', () => {
+            clearTimeout(slideInterval);
+            const elapsed = Date.now() - timerStart;
+            timerBar.style.transition = 'none';
+            timerBar.style.width = (elapsed / slideDuration * 100) + '%';
+        });
+        sliderWrapper.addEventListener('mouseleave', () => {
+            const elapsed = Date.now() - timerStart;
+            const remaining = slideDuration - elapsed;
+            timerBar.style.transition = 'width ' + remaining + 'ms linear';
+            timerBar.style.width = '100%';
+            slideInterval = setTimeout(() => {
+                nextSlide();
+                startSlider();
+            }, remaining);
+        });
+
+        // ===== FORM MODAL =====
+        const formModal = document.getElementById('formModal');
+        const confirmModal = document.getElementById('confirmModal');
+        const bookingForm = document.getElementById('bookingForm');
+        const ticketNum = document.getElementById('ticketNum');
+
+        function openFormModal() {
+            formModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('date').setAttribute('min', today);
+        }
+
+        function closeFormModal() {
+            formModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function closeConfirmModal() {
+            confirmModal.classList.remove('active');
+            bookingForm.reset();
+            switchTab('new'); // reset to default tab
+        }
+
+        formModal.addEventListener('click', function(e) {
+            if (e.target === this) closeFormModal();
+        });
+
+        confirmModal.addEventListener('click', function(e) {
+            if (e.target === this) closeConfirmModal();
+        });
+
+        // Dynamic Form Tabs (New vs Returning)
+        function switchTab(type) {
+            const isNew = type === 'new';
+            
+            // Toggle Buttons
+            document.getElementById('tabNew').classList.toggle('active', isNew);
+            document.getElementById('tabReturning').classList.toggle('active', !isNew);
+            document.getElementById('patientType').value = isNew ? 'first-time' : 'returning';
+            
+            // Get Field Containers
+            const firstTimeFields = document.getElementById('firstTimeFields');
+            const returningFields = document.getElementById('returningPatientFields');
+            
+            if (isNew) {
+                firstTimeFields.style.display = 'block';
+                returningFields.style.display = 'none';
+                
+                // Set 'required' attributes for First Time
+                firstTimeFields.querySelectorAll('input, select').forEach(el => el.required = true);
+                document.getElementById('notes').required = false; 
+                document.getElementById('medicalHistory').required = false; 
+                document.getElementById('lastVisit').required = false;
+            } else {
+                firstTimeFields.style.display = 'none';
+                returningFields.style.display = 'block';
+                
+                // Remove 'required' from First Time, add to Returning
+                firstTimeFields.querySelectorAll('input, select').forEach(el => el.required = false);
+                document.getElementById('lastVisit').required = true;
+            }
+        }
+
+        // ===== FORMSPREE ASYNC SUBMIT ======
+        bookingForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // UI Feedback during submission
+            const submitBtn = this.querySelector('.form-submit');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending Request...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(this);
+            const actionUrl = this.getAttribute('action');
+
+            try {
+                const response = await fetch(actionUrl, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    const date = new Date();
+                    const ticket = 'ARK-' + date.getFullYear() + '-' + Math.random().toString(36).substr(2, 4).toUpperCase();
+                    document.getElementById('ticketNum').textContent = ticket;
+                    
+                    closeFormModal();
+                    document.getElementById('confirmModal').classList.add('active');
+                } else {
+                    alert("Oops! There was a problem submitting your form. Please check your details and try again.");
+                }
+            } catch (error) {
+                alert("Oops! There was a network error. Please try again.");
+            } finally {
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // ===== SCROLL ANIMATIONS =====
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        fadeElements.forEach(el => fadeObserver.observe(el));
+
+        // ===== ADMIN PATIENT RECORDS PANEL =====
+        const recordsPanel = document.getElementById('recordsPanel');
+        const recordsKey = document.getElementById('recordsKey');
+        const recordsError = document.getElementById('recordsError');
+
+        function toggleRecords() {
+            recordsPanel.classList.toggle('active');
+            recordsError.classList.remove('active');
+            
+            if (recordsPanel.classList.contains('active')) {
+                if(document.getElementById('recordsAuth').style.display !== 'none') {
+                    recordsKey.value = '';
+                    recordsKey.focus();
+                }
+            }
+        }
+
+        function verifyRecords() {
+            const key = recordsKey.value;
+            if (key === '#######') {
+                // Hide Auth, Show Dashboard
+                recordsError.classList.remove('active');
+                document.getElementById('recordsAuth').style.display = 'none';
+                document.getElementById('recordsDashboard').style.display = 'block';
+                
+                // Set default date to today
+                const todayStr = new Date().toISOString().split('T')[0];
+                document.getElementById('adminDate').value = todayStr;
+                showMockBookings(); // Load data
+            } else {
+                recordsError.classList.add('active');
+                recordsKey.value = '';
+                recordsKey.focus();
+            }
+        }
+
+        function logoutRecords() {
+            document.getElementById('recordsAuth').style.display = 'block';
+            document.getElementById('recordsDashboard').style.display = 'none';
+            recordsKey.value = '';
+            toggleRecords(); // Close the panel completely
+        }
+
+        // Mock function to simulate pulling online bookings
+        function showMockBookings() {
+            const selectedDate = document.getElementById('adminDate').value;
+            const bookingsDiv = document.getElementById('adminBookings');
+            
+            // Clear current view
+            bookingsDiv.innerHTML = '';
+            
+            // Randomly generate 0 to 3 mock bookings based on the date string
+            const randomCount = (selectedDate.charCodeAt(selectedDate.length-1) % 4); 
+            
+            if (randomCount === 0) {
+                bookingsDiv.innerHTML = '<p style="color: var(--text-light); text-align: center; margin-top: 20px;">No online bookings for this date.</p>';
+                return;
+            }
+
+            const mockProcedures = ['Composite Restoration', 'Consultation / Checkup', 'Zirconia Crown', 'Smile Makeover'];
+            const mockNames = ['Juan Dela Cruz', 'Maria Santos', 'Robert Lee', 'Sarah Kim'];
+
+            let htmlStr = '';
+            for(let i=0; i<randomCount; i++) {
+                // Just picking random mock data based on loop index
+                const name = mockNames[(i + randomCount) % mockNames.length];
+                const procedure = mockProcedures[(i * randomCount) % mockProcedures.length];
+                const time = (9 + i) + ':00 AM';
+
+                htmlStr += `
+                    <div style="padding: 10px; border-bottom: 1px solid var(--border-light); background: white; border-radius: 6px; margin-bottom: 8px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                            <strong style="color: var(--brown-dark);">${name}</strong>
+                            <span style="color: var(--sage); font-weight: 700;">${time}</span>
+                        </div>
+                        <span style="color: var(--text-muted);"><i class="fas fa-tooth" style="margin-right: 4px; font-size: 10px;"></i> ${procedure}</span>
+                    </div>
+                `;
+            }
+            bookingsDiv.innerHTML = htmlStr;
+        }
+
+        recordsKey.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') verifyRecords();
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.records-toggle') && !e.target.closest('.records-panel')) {
+                recordsPanel.classList.remove('active');
+            }
+        });
+
+        // ===== SET MIN DATE FOR BOOKING =====
+        const dateInput = document.getElementById('date');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+
+        // ===== SEO SCHEMA =====
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "Dentist",
+            "name": "Arka Dental Center",
+            "image": "https://arkadentalcenter.com/assets/logo.jpg",
+            "url": "https://arkadentalcenter.com",
+            "telephone": "+63-967-195-6703",
+            "email": "arkadentalcenterph@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Unit L519 One Oasis Condominium Hub A, Ortigas Extension",
+                "addressLocality": "Pasig City",
+                "addressRegion": "Metro Manila",
+                "postalCode": "1608",
+                "addressCountry": "PH"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "14.5862",
+                "longitude": "121.0614"
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                }
+            ],
+            "priceRange": "$$",
+            "sameAs": [
+                "https://facebook.com/arkadentalph",
+                "https://instagram.com/arkadentalph"
+            ],
+            "medicalSpecialty": "Prosthodontics",
+            "serviceType": [
+                "Composite Restoration",
+                "Dental Crowns",
+                "Dental Bridges",
+                "Dental Veneers",
+                "Smile Makeover",
+                "General Dentistry"
+            ]
+        };
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(schema);
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>
